@@ -40,7 +40,7 @@ cors_proxy.createServer({
     xfwd: false,
   },
   setHeaders: {
-    Referer: "https://hsp-hh.sport.uni-hamburg.de/angebote/aktueller_zeitraum/_Badminton.html"
+    Referer: "https://hsp-hh.sport.uni-hamburg.de/cgi/anmeldung.fcgi"
   },
 }).listen(port, host, function() {
   console.log('Running CORS Anywhere on ' + host + ':' + port);
