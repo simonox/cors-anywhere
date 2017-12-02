@@ -40,9 +40,10 @@ cors_proxy.createServer({
     xfwd: false,
   },
   setHeaders: {
-    Referer: "https://hsp-hh.sport.uni-hamburg.de/cgi/anmeldung.fcgi",
-    Origin: "https://hsp-hh.sport.uni-hamburg.de",
-    Host: "hsp-hh.sport.uni-hamburg.de"
+    "Referer": "https://hsp-hh.sport.uni-hamburg.de/cgi/anmeldung.fcgi",
+    "Origin": "https://hsp-hh.sport.uni-hamburg.de",
+    "Host": "hsp-hh.sport.uni-hamburg.de",
+    "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Mobile Safari/537.36"
   },
 }).listen(port, host, function() {
   console.log('Running CORS Anywhere on ' + host + ':' + port);
