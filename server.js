@@ -42,13 +42,7 @@ cors_proxy.createServer({
   setHeaders: {
     "Referer": "https://hsp-hh.sport.uni-hamburg.de/cgi/anmeldung.fcgi",
     "Origin": "https://hsp-hh.sport.uni-hamburg.de",
-    "Host": "hsp-hh.sport.uni-hamburg.de",
-    "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Mobile Safari/537.36",
-    "Cookie": "_pk_ref.76.2e3e=%5B%22%22%2C%22%22%2C1512156958%2C%22https%3A%2F%2Fwww.google.de%2F%22%5D; _pk_id.76.2e3e=638358c6b2ba7f8e.1510646034.20.1512156958.1512156958.",
-    "Accept-Language": "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
-    "Upgrade-Insecure-Requests": "1",
-    "Cache-Control": "max-age=0"
+    "Host": "hsp-hh.sport.uni-hamburg.de"
   },
 }).listen(port, host, function() {
   console.log('Running CORS Anywhere on ' + host + ':' + port);
